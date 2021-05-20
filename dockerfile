@@ -37,3 +37,5 @@ RUN apt-get -y autoclean && \
 
 # Copy pdns.conf from source repo into image
 COPY /pdns.conf /etc/powerdns/pdns.conf
+
+ENTRYPOINT [ "/bin/bash" ]
